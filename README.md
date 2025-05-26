@@ -25,7 +25,7 @@ Questo progetto è una riproduzione **pixel-perfect** di un’interfaccia per da
 
 ### Mobile
 
-![Screenshot Mobile](./src/assets/productivity-dashboard-mobile.jpeg)
+<img src="./src/assets/productivity-dashboard-mobile.jpeg" alt="Screenshot Mobile" width="200" />
 
 ## Live Preview
 
