@@ -16,3 +16,17 @@ Questo progetto è una riproduzione **pixel-perfect** di un’interfaccia per da
 - **CSS3** – Stili moderni con Grid, Flexbox e variabili personalizzate  
 - **React Icons** – Iconografia coerente  
 - **CSS Grid** – Sistema avanzato di layout  
+
+## Screenshots
+
+### Desktop
+
+![Screenshot Desktop](./src/assets/productivity-dashboard-desktop.png)
+
+### Mobile
+
+![Screenshot Mobile](./src/assets/productivity-dashboard-mobile.jpeg)
+
+## Live Preview
+
+[👉 Prova la demo live qui](https://productivity-dashb.netlify.app/)
