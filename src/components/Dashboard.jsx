@@ -104,7 +104,6 @@ const Dashboard = () => {
 
         {/* Card 4 - Grafico delle vendite settimanali */}
         <div className="card card4">
-          <div className="card-glow card-glow-purple"></div>
           <div className="chart-header">
             <h3 className="chart-title">Sales Overview</h3>
             <div className="chart-period">Last 7 days</div>
