@@ -46,7 +46,7 @@
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem 1.5rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1rem;
   }
   
