@@ -1,77 +1,83 @@
+/* Stile principale della navbar */
 .navbar {
-  width: 100%;
-  padding: 1.5rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f9fafb;
-  border-bottom: 1px solid #e5e7eb;
+  width: 100%; /* Occupa tutta la larghezza dello schermo */
+  padding: 1.5rem 2rem; /* Spazio intorno */
+  display: flex; /* Usa flexbox */
+  align-items: center; /* Allinea al centro verticalmente */
+  justify-content: space-between; /* Mette gli elementi ai lati */
+  background-color: #f9fafb; /* Sfondo chiaro */
+  border-bottom: 1px solid #e5e7eb; /* Bordo in basso sottile */
 }
 
+/* Parte sinistra della navbar (la barra di ricerca) */
 .navbar-left {
-  flex: 1;
+  flex: 1; /* Occupa spazio disponibile */
 }
 
+/* Stile della barra di ricerca */
 .navbar-search {
-  padding: 0.5rem 1rem;
-  border: 1px solid #d1d5db;
-  border-radius: 999px;
-  outline: none;
-  width: 30%;
-  color: #0f172a;
-  background-color: white;
+  padding: 0.5rem 1rem; /* Interno */
+  border: 1px solid #d1d5db; /* Bordo grigio chiaro */
+  border-radius: 999px; /* Forma rotonda */
+  outline: none; /* Rimuove l'effetto quando clicchi dentro */
+  width: 30%; /* Larghezza iniziale */
+  color: #0f172a; /* Testo scuro */
+  background-color: white; /* Sfondo bianco */
 }
 
+/* Parte destra della navbar (icona + avatar) */
 .navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  display: flex; /* Usa flexbox */
+  align-items: center; /* Allinea al centro verticalmente */
+  gap: 1.5rem; /* Spazio tra icona e avatar */
 }
 
+/* Stile per l'icona delle notifiche */
 .navbar-icon {
-  font-size: 1.2rem;
-  color: #0f172a;
-  cursor: pointer;
+  font-size: 1.2rem; /* Dimensione media */
+  color: #0f172a; /* Colore testo */
+  cursor: pointer; /* Manina quando ci passi sopra */
 }
 
+/* Stile per l'immagine dell'utente */
 .navbar-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  cursor: pointer;
+  width: 40px; /* Larghezza fissa */
+  height: 40px; /* Altezza uguale (quadrata) */
+  border-radius: 50%; /* Rende l'immagine circolare */
+  object-fit: cover; /* Adatta l'immagine senza deformarla */
+  cursor: pointer; /* Manina quando ci passi sopra */
 }
 
-
+/* Per schermi piccoli (es. smartphone) */
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem 1.5rem;
-    flex-wrap: nowrap;
-    gap: 1rem;
+    padding: 1rem 1.5rem; /* Riduciamo i padding */
+    flex-wrap: nowrap; /* Non permettiamo il wrapping */
+    gap: 1rem; /* Spazio tra elementi */
   }
-  
+
   .navbar-left {
-    flex: 1;
-    min-width: 0; 
+    flex: 1; /* Occupa comunque spazio */
+    min-width: 0; /* Per evitare overflow */
   }
-  
+
   .navbar-search {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
+    width: 100%; /* Diventa più grande */
+    padding: 0.75rem 1rem; /* Aumentiamo un po' lo spazio interno */
+    font-size: 1rem; /* Testo leggermente più grande */
   }
-  
+
   .navbar-right {
-    gap: 1rem;
-    flex-shrink: 0;
+    gap: 1rem; /* Riduciamo lo spazio tra icona e avatar */
+    flex-shrink: 0; /* Non si restringe troppo */
   }
-  
+
   .navbar-icon {
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Un po' più grande */
   }
-  
+
   .navbar-avatar {
-    width: 36px;
+    width: 36px; /* Un po' più piccolo */
     height: 36px;
   }
 }

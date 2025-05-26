@@ -1,19 +1,22 @@
-*{
+/* Reset di base: rimuove margini e padding di default */
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Includiamo padding e bordi nella larghezza/altezza */
 }
 
+/* Contenitore principale dell'app */
 .app-container {
-  display: flex;
-  height: 100vh;
-  background: white;
-  overflow: hidden;
+  display: flex; /* Usa flexbox per disporre Sidebar e contenuto principale affiancati */
+  height: 100vh; /* Occupa tutta l'altezza dello schermo */
+  background: white; /* Sfondo bianco */
+  overflow: hidden; /* Nasconde eventuali scroll esterni */
 }
 
+/* Parte principale (dove ci sono Header e Dashboard) */
 .main-content {
-  flex-grow: 1; 
+  flex-grow: 1; /* Occupa tutto lo spazio disponibile accanto alla Sidebar */
   display: flex;
-  flex-direction: column; 
-  overflow: auto; 
+  flex-direction: column; /* Disposizione verticale: prima Header, poi Dashboard */
+  overflow: auto; /* Permette lo scroll solo dentro questa parte se necessario */
 }

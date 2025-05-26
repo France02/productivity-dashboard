@@ -1,6 +1,6 @@
-
 import React from 'react';
 import "../css/Sidebar.css";
+// Import delle icone dal pacchetto react-icons
 import {
   MdDashboard,      
   MdBarChart,     
@@ -12,17 +12,18 @@ import {
   MdLogout          
 } from 'react-icons/md';
 
-export default function Sidebar() {
+const Sidebar = () => {
   return (
     <aside className="sidebar">
-      {/* LOGO */}
+      {/* Logo della sidebar */}
       <div className="sidebar-logo">
         🧠
       </div>
 
-      {/* NAV PRINCIPALE */}
+      {/* Navigazione principale con le icone */}
       <nav className="sidebar-nav">
         <ul>
+          {/* Icona dashboard evidenziata come attiva */}
           <li className="active"><MdDashboard size={24} title="Dashboard" /></li>
           <li><MdBarChart size={24} title="Analytics" /></li>
           <li><MdChecklist size={24} title="Tasks" /></li>
@@ -32,7 +33,7 @@ export default function Sidebar() {
         </ul>
       </nav>
 
-      {/* FOOTER */}
+      {/* Footer della sidebar con impostazioni e logout */}
       <div className="sidebar-footer">
         <ul>
           <li><MdSettings size={24} title="Settings" /></li>
@@ -42,3 +43,5 @@ export default function Sidebar() {
     </aside>
   );
 }
+
+export default Sidebar;
